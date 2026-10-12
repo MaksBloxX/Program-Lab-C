@@ -1,5 +1,50 @@
+# Compiled executables
 *.exe
+*.out
 *.o
-# --- Editors / OS ---
-.vscode/
-.idea/
+*.obj
+*.a
+*.so
+*.dll
+*.class
+
+# Debug files
+*.pdb
+*.ilk
+*.idb
+
+# VS Code temporary files
+.vscode/*.log
+.vscode/ipch/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*~
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Build directories
+build/
+bin/
+dist/
+
+# CMake generated files
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+
+# Debug output
+core
+core.*
+
+# Temporary input and output files
+input.txt
+output.txt
