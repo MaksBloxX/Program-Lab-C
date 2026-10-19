@@ -33,5 +33,5 @@ int main()
 // New Problem: 1041 - Coordinates of a Point
 /* 'If the point is at X axis write "Eixo X", else if the point is at Y axis write "Eixo Y"' er mane jodi x axis point man hoy tahole y=0 ar x>=0.0001 hobe na karon x axis holo right and left rekha(line) ase. dhoro x=-5.0 y=0.0 tahole x axis e point ache ba left dike ache.
 
-"missing else{}" na likhe run korle o kaj korbe karon else if er porer condition gulo check hobe. but else{} use korle jodi kono condition match na kore tahole else{} er vitore je code ache ta run hobe. but ekhane else{} use kora hoy nai karon sob condition check kora hoyeche. got it?
+"missing else{}" na likhe run korle o kaj korbe karon else if er porer condition gulo check hobe. but else{} use korle jodi kono condition match na kore tahole else{} er vitore je code ache ta run hobe. but ekhane else{} use kora hoy nai karon sob condition check kora hoyeche. got it? c
 */
