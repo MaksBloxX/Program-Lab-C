@@ -2,16 +2,25 @@
 
 int main()
 {
-    int n, sum, a, b;
+    int n, a, sum;
     
     while(scanf("%d", &n) == 1 && n != 0){
-        while(n > 2){
+        sum = 0;
+        while(n > 0){
             a = n % 10;
-            b = n / 10;
-            sum = a + b;
-            n = sum;
+            sum = sum + a;
+            n = n / 10;
         }
-        printf("%d\n", n);
+        while(sum >= 10){
+            n = sum;
+            sum = 0;
+            while(n > 0){
+                a = n % 10;
+                sum = sum + a;
+                n = n / 10;
+            }
+        }
+        printf("%d\n", sum);
     }
     return 0;
 }
