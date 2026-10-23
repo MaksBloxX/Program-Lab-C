@@ -3,8 +3,8 @@
 int main(){
     char ch;
 
-    printf("Enter Any Number: ", ch, ch);
-    scanf("%c",&ch);          // Input any latter
+    printf("Enter Any Number: ");
+    scanf("%c",&ch);
 
     printf("ASCII value of %c = %d", ch, ch);
 
