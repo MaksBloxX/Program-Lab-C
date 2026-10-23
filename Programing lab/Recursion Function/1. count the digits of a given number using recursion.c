@@ -22,3 +22,15 @@ int main()
 
     return 0;
 }
+
+/*another vwesion of code
+
+if (n == 0)
+count = 1;
+
+while (n != 0) {
+count++;
+n = n / 10;
+}
+
+*/

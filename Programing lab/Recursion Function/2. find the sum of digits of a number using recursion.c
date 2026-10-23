@@ -19,3 +19,12 @@ int main()
 
     return 0;
 }
+
+/*Another version of code
+
+while (n != 0) {
+sum = sum + (n % 10);
+n = n / 10;
+}
+
+*/
