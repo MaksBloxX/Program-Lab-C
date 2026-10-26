@@ -8,19 +8,24 @@ int main()
     scanf("%d",&b);
     
     if(a>b){
-        for(i=b+1; i<a; i++){
-            if(b%2!=0){
-                sum = sum+b;
-            }
+        if(b%2==0){
+            b=b+1;
+        }
+        else{
+            b=b+2;
+        }
+        for(i=b; i<a; i=i+2){
+            sum = sum + i;
         }
         printf("%d\n",sum);
     }
     
-    else if(a<b){
-        for(i=a+1; i<b; i++){
-            if(a%2!=0){
-                sum = sum+b;
-            }
+    else if(b>a){
+        if(a%2==0){
+            a=a+1;
+        }
+        for(i=a; i<b; i=i+2){
+            sum = sum + i;
         }
         printf("%d\n",sum);
     }
