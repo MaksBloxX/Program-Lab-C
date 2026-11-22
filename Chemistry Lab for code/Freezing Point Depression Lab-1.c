@@ -29,7 +29,7 @@ int main(){
         S_fp = N_fp - Tf;
 
         // Display Output Results
-        printf("\n====Display results====\n");
+        printf("\n====Calculation Results====\n");
 
         printf("Molality: %0.4lf mol/kg\n",M);
         printf("Freezing Point Depression: %0.4lf C\n",Tf);

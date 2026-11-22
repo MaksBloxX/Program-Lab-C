@@ -34,10 +34,11 @@ int main(){
         }
 
         // Display Output Results
-        printf("\n=====Display Results=====\n");
+        printf("\n=====Calculation Results=====\n");
 
-        printf("Equilibrium Constants: %0.4lf\n",Kc);
-        printf("Reaction Quotient: %0.4lf\n",Qc);
+        printf("Equilibrium Constants (Kc): %0.4lf\n",Kc);
+        printf("Reaction Quotient (Qc): %0.4lf\n",Qc);
+        printf("\n");
 
         if(Qc==Kc){
             printf("System is at Equilibrium.\n");
@@ -63,7 +64,7 @@ int main(){
             printf("\nGraph saved successfully.\n");
         }
         else{
-            printf("Error creating CSV file.\n");
+            printf("\nError creating CSV file.\n");
         }
 
         //Re-run Options
