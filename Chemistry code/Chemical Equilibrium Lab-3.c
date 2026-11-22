@@ -52,7 +52,7 @@ int main(){
         }
 
         // File Saved & Graph Data
-        FILE *file = fopen("lab3.csv","w");
+        FILE *file = fopen("Lab-3.csv","w");
         if(file!=NULL){
             fprintf(file,"Situation,Qc,Kc\n");
             fprintf(file,"Q<K,1.0,4.0\n");
@@ -63,7 +63,7 @@ int main(){
             printf("\nGraph saved successfully.\n");
         }
         else{
-            printf("Error creating csv file.\n");
+            printf("Error creating CSV file.\n");
         }
 
         //Re-run Options
