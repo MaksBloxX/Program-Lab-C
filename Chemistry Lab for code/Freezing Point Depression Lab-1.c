@@ -50,7 +50,7 @@ int main(){
             printf("\nGraph data saved successfully.\n");
         }
         else{
-            printf("Error creating CSV file.\n");
+            printf("\nError creating CSV file.\n");
         }
 
         //Re-run Options

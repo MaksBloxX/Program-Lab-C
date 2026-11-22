@@ -18,13 +18,13 @@ int main(){
         printf("Enter operating Temperature (K): ");
         scanf("%lf",&T);
 
-        printf("Enter Reverse Saturation Current (Is): ");
+        printf("Enter Reverse Saturation Current,Is (A): ");
         scanf("%lf",&IS);
 
-        printf("Enter Ideality Factor (n): ");
+        printf("Enter Ideality Factor,n: ");
         scanf("%lf",&n);
 
-        printf("Enter maximum voltage (Vd): ");
+        printf("Enter maximum voltage,Vd (V): ");
         scanf("%lf",&VD);
 
         //Calculation formulas
@@ -32,17 +32,15 @@ int main(){
         ID = IS*(exp(VD/(n*Vt))-1.0);
 
         // Display Output Results
-        printf("\n====Display results====\n");
+        printf("\n=====Calculation Results=====\n");
 
         printf("Thermal Voltage: %0.4lf V\n",Vt);
         printf("Diode Current: %0.10e A\n",ID);
 
         //File Saved & Graph Data
         FILE *file = fopen("Lab-2.csv","w");
-
         if(file!=NULL){
             fprintf(file,"Voltage(V),Current(A)\n");
-
             for(double Vd=0; Vd<=VD; Vd+=0.02){
                 double Id = IS*(exp(Vd/(n*Vt))-1.0);
 
@@ -53,18 +51,16 @@ int main(){
             printf("\nGraph data saved successfully.\n");
         }
         else{
-            printf("Error creating CSV file.\n");
+            printf("\nError creating CSV file.\n");
         }
 
         //Re-run Options
         printf("\nDo you want another calculation? (y/n): ");
         scanf(" %c",&ch);
-
         if(ch=='n'||ch=='N'){
             printf("Exiting Lab Simulation.\n");
             break;
         }
     }
-
     return 0;
 }
